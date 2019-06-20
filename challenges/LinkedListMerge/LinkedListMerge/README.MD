@@ -33,8 +33,7 @@ and return a reference to the head of the zipped list.
 
 
 ## Whiteboard Visual
-***[Your Whiteboard Image]***
-![Image 1](https://via.placeholder.com/750x500)
+![White Board Solution](...\..\assets\LinkedListMergeWhiteBoard.jpg)
 
 
 ------------------------------

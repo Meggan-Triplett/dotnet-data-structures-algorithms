@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
+//using System.Collections.Generic;
 using System.Text;
+using StackAndQueue.Classes;
 
 namespace StackAndQueue.Classes
 {
@@ -43,7 +44,7 @@ namespace StackAndQueue.Classes
             {
                 return Front.Value;
             }
-            catch(NullReferenceException nre)
+            catch (NullReferenceException nre)
             {
                 throw new NullReferenceException("Front not found");
             }

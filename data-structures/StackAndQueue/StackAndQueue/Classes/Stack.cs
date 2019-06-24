@@ -1,14 +1,52 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-/// <summary>
-/// Summary description for Class1
-/// </summary>
-public class Class1
+namespace StackAndQueue.Classes
 {
-	public Class1()
-	{
-		//
-		// TODO: Add constructor logic here
-		//
-	}
+    public class Stack
+    {
+        public Node Top { get; set; }
+
+        public Stack(int value)
+        {
+            Node node = new Node(value);
+            Top = node;
+        }
+
+        public Stack()
+        {
+
+        }
+
+        public void Push(int value)
+        {
+            Node node = new Node(value);
+            node.Next = Top;
+            Top = node;
+        }
+
+        public int Pop()
+        {
+            Node temp = Top;
+            Top = Top.Next;
+            temp.Next = null;
+            return temp.Value;
+        }
+
+        public int Peek()
+        {
+            try
+            {
+                return Top.Value;
+            }
+            catch (NullReferenceException nre)
+            {
+                throw new NullReferenceException("No Node Found");
+            }
+        }
+
+
+    }
+
 }

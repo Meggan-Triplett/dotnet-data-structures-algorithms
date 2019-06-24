@@ -6,7 +6,7 @@ namespace StackAndQueueUnitTests
 {
     public class UnitTest1
     {
-        [Fact]
+        //[Fact]
         public void CanPushOntoStack()
         {
             
@@ -15,25 +15,25 @@ namespace StackAndQueueUnitTests
 
         }
 
-        [Fact]
+        //[Fact]
         public void CanPushMultipleValuesOntoStack()
         {
 
         }
 
-        [Fact]
+        //[Fact]
         public void CanPopOffStack()
         {
 
         }
 
-        [Fact]
+        //[Fact]
         public void CanEmptyStackAfterMultiplePops()
         {
 
         }
 
-        [Fact]
+        //[Fact]
         public void CanPeekNextItemOnStack()
         {
 
@@ -47,31 +47,31 @@ namespace StackAndQueueUnitTests
             Assert.Null(stack.Top);
         }
 
-        [Fact]
+        //[Fact]
         public void CanEnqueueIntoQueue()
         {
 
         }
 
-        [Fact]
+        //[Fact]
         public void CanEnqueueMultipleValuesIntoQueue()
         {
 
         }
 
-        [Fact]
+        //[Fact]
         public void CanDequeueOutOfQueueExpectedValue()
         {
 
         }
 
-        [Fact]
+        //[Fact]
         public void CanPeekIntoQueueExpectedValue()
         {
 
         }
 
-        [Fact]
+        //[Fact]
         public void CanEmptyQueueAfterMultipleDequeues()
         {
 
@@ -80,7 +80,9 @@ namespace StackAndQueueUnitTests
         [Fact]
         public void CanInstantiateEmptyQueue()
         {
+            Queue queue = new Queue();
 
+            Assert.Null(queue.Front);
         }
 
     }

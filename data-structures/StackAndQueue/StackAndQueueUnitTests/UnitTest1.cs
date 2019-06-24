@@ -6,13 +6,12 @@ namespace StackAndQueueUnitTests
 {
     public class UnitTest1
     {
-        //[Fact]
+        [Fact]
         public void CanPushOntoStack()
         {
-            
+            Stack stack = new Stack(42);
 
-
-
+            Assert.NotNull(stack.Top);
         }
 
         //[Fact]

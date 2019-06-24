@@ -46,10 +46,12 @@ namespace StackAndQueueUnitTests
             Assert.Null(stack.Top);
         }
 
-        //[Fact]
+        [Fact]
         public void CanEnqueueIntoQueue()
         {
+            Queue queue = new Queue(42);
 
+            Assert.NotNull(queue.Front);
         }
 
         //[Fact]

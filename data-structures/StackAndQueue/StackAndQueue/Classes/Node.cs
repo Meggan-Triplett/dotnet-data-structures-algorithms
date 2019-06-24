@@ -1,14 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-/// <summary>
-/// Summary description for Class1
-/// </summary>
-public class Class1
+namespace StackAndQueue.Classes
 {
-	public Class1()
-	{
-		//
-		// TODO: Add constructor logic here
-		//
-	}
+    public class Node
+    {
+        public int Value { get; set; }
+        public Node Next { get; set; }
+
+        public Node(int value)
+        {
+            Value = value;
+        }
+    }
+
 }

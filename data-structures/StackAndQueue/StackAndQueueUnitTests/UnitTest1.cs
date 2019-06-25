@@ -83,10 +83,15 @@ namespace StackAndQueueUnitTests
             Assert.Equal(26, testQueue.Rear.Value);
         }
 
-        //[Fact]
+        [Fact]
         public void CanDequeueOutOfQueueExpectedValue()
         {
+            Queue testQueue = new Queue(42);
+            testQueue.Enqueue(34);
+            testQueue.Enqueue(26);
+            int removedNodeValue = testQueue.Dequeue();
 
+            Assert.Equal(42, removedNodeValue);
         }
 
         //[Fact]

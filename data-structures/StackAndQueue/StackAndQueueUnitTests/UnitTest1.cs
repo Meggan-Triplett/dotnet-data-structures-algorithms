@@ -94,16 +94,26 @@ namespace StackAndQueueUnitTests
             Assert.Equal(42, removedNodeValue);
         }
 
-        //[Fact]
+        [Fact]
         public void CanPeekIntoQueueExpectedValue()
         {
+            Queue testQueue = new Queue(42);
+            int peekedFrontValue = testQueue.Peek();
+
+            Assert.Equal(42, peekedFrontValue);
 
         }
 
         //[Fact]
         public void CanEmptyQueueAfterMultipleDequeues()
         {
+            Queue testQueue = new Queue();
+            testQueue.Enqueue(34);
+            testQueue.Enqueue(26);
+            testQueue.Dequeue();
+            testQueue.Dequeue();
 
+            Assert.Null(testQueue.Front);
         }
 
         [Fact]

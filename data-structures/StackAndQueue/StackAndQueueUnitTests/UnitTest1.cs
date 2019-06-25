@@ -35,10 +35,16 @@ namespace StackAndQueueUnitTests
             Assert.Equal(34, testStack.Top.Value);
         }
 
-        //[Fact]
+        [Fact]
         public void CanEmptyStackAfterMultiplePops()
         {
+            Stack testStack = new Stack();
+            testStack.Push(34);
+            testStack.Push(26);
+            testStack.Pop();
+            testStack.Pop();
 
+            Assert.Null(testStack.Top);
         }
 
         //[Fact]

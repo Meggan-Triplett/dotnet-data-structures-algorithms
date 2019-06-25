@@ -31,37 +31,44 @@ Queue is an ordered list that consists of nodes with similar data type, it's ope
 
 | Stack Method | Summary | Big O Time | Big O Space | Example | 
 | :----------- | :----------- | :-------------: | :-------------: | :----------- |
-| Push | Adds a new `Node` to the `Linked List` | O(1) | O(1) | myList.Insert(99) |
-| Includes | Takes in a value and returns a boolean depending on if the value is in the `LinkedList` | O(n) | O(1) | myList.Includes(99) |
-| Print | Prints the `Linked List` to the console | O(n) | O(1) | myList.Print() |
+| Push | Adds a new `Node` to the `Stack` | O(1) | O(1) | stack.Push(42) |
+| Pop | Removes the top `Node` from the `Top` of the `Stack` | O(1) | O(1) | stack.Pop() |
+| Peek | Will return the `Value` of the `Node` at the `Top` of the `Stack` | O(1) | O(1) | stack.Peek() |
 
 | Queue Method | Summary | Big O Time | Big O Space | Example | 
 | :----------- | :----------- | :-------------: | :-------------: | :----------- |
-| Insert | Adds a new `Node` to the `Linked List` | O(1) | O(1) | myList.Insert(99) |
-| Includes | Takes in a value and returns a boolean depending on if the value is in the `LinkedList` | O(n) | O(1) | myList.Includes(99) |
-| Print | Prints the `Linked List` to the console | O(n) | O(1) | myList.Print() |
+| Enqueue | Adds a new `Node` to the `Rear` of the `Queue` | O(1) | O(1) | queue.Enqueue(42) |
+| Dequeue | Remove a `Node` from the `Front` of the `Queue` and returns it's `Value` | O(1) | O(1) | queue.Enqueue(42) |
+| Peek | Will return the `Value` of the `Node` at the `Front` of the `Queue` | O(1) | O(1) | queue.Peek() |
 ------------------------------
 
 ## Visuals
-***[Add screenshots of your methods in action]***
 
-##### Insert Method
-***[In your own words explain what this method is doing]***
-*The Insert Method takes in an int as a parameter. A new Node is then created using the* 
-*int param as its Value. The new Node is then placed in the Linked List at the Head and*
-*the previous Head is assigned as the new Nodes Next.*
-![Image 1](https://via.placeholder.com/750x500)
-##### Includes Method
-***[In your own words explain what this method is doing]***
-*The Includes Method takes in an int as a parameter then iterates through the Nodes of the*
-*Linked List checking all the Values. If the value is found True is returned, if not then*
-*False is returned.*
-![Image 1](https://via.placeholder.com/750x500)
-##### Print Method
-***[In your own words explain what this method is doing]***
-*The Print Method displays a well formatted depiction of the current state of the*
-*Linked List by iterating over all Nodes.*
-![Image 1](https://via.placeholder.com/750x500)
+##### Stack Push Method
+*The Push Method takes in an int as a parameter and then creates a new Node which sets the int as it's 
+Value and adds it to the Top of the Stack.*
+![Stack Push Method Example](https://via.placeholder.com/750x500)
+
+##### Stack Pop Method
+*The Push Method removes the Node that is currently at the Top of the Stack.*
+![Stack Pop Method Example](https://via.placeholder.com/750x500)
+
+##### Stack Peek Method
+*The Print Method returns the Value of the Node at the Top of the Stack.
+![Stack Peek Method Example](https://via.placeholder.com/750x500)
+
+##### Queue Enqueue Method
+*The Enqueue Method takes in an int as a parameter and then creates a new Node which sets the int as it's*
+Value and adds it to the Rear of the Queue.*
+![Queue Enqueue Method Example](https://via.placeholder.com/750x500)
+
+##### Queue Dequeue Method
+*The Push Method removes the Node that is currently at the Front of the Queue and returns it's Value.*
+![Queue Dequeue Method Example](https://via.placeholder.com/750x500)
+
+##### Queue Peek Method
+*The Peek Method returns the Value of the Node at the Front of the Queue.*
+![Queue Peek Method Example](https://via.placeholder.com/750x500)
 
 ------------------------------
 

@@ -24,10 +24,15 @@ namespace StackAndQueueUnitTests
             Assert.Equal(26, testStack.Top.Value);   
         }
 
-        //[Fact]
+        [Fact]
         public void CanPopOffStack()
         {
+            Stack testStack = new Stack(42);
+            testStack.Push(34);
+            testStack.Push(26);
+            testStack.Pop();
 
+            Assert.Equal(34, testStack.Top.Value);
         }
 
         //[Fact]
@@ -58,10 +63,14 @@ namespace StackAndQueueUnitTests
             Assert.NotNull(testQueue.Front);
         }
 
-        //[Fact]
+        [Fact]
         public void CanEnqueueMultipleValuesIntoQueue()
         {
+            Queue testQueue = new Queue(42);
+            testQueue.Enqueue(34);
+            testQueue.Enqueue(26);
 
+            Assert.Equal(26, testQueue.Rear.Value);
         }
 
         //[Fact]

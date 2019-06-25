@@ -14,15 +14,14 @@ namespace StackAndQueueUnitTests
             Assert.Equal(42, testStack.Top.Value);
         }
 
-        //[Fact]
+        [Fact]
         public void CanPushMultipleValuesOntoStack()
         {
             Stack testStack = new Stack(42);
             testStack.Push(34);
             testStack.Push(26);
-         
-                
-            
+
+            Assert.Equal(26, testStack.Top.Value);   
         }
 
         //[Fact]

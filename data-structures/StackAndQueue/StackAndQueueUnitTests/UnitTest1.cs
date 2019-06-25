@@ -47,10 +47,14 @@ namespace StackAndQueueUnitTests
             Assert.Null(testStack.Top);
         }
 
-        //[Fact]
+        [Fact]
         public void CanPeekNextItemOnStack()
         {
+            Stack testStack = new Stack(42);
+            testStack.Push(34);
+            testStack.Push(26);
 
+            Assert.Equal(34, testStack.Top.Next.Value);
         }
 
         [Fact]

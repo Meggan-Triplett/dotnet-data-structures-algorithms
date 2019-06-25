@@ -43,6 +43,7 @@ Queue is an ordered list that consists of nodes with similar data type, it's ope
 ------------------------------
 
 ## Visuals
+**Images still need to be generated and added**
 
 ##### Stack Push Method
 *The Push Method takes in an int as a parameter and then creates a new Node which sets the int as it's 

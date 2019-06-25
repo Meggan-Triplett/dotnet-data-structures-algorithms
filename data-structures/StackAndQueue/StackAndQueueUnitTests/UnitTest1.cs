@@ -9,15 +9,20 @@ namespace StackAndQueueUnitTests
         [Fact]
         public void CanPushOntoStack()
         {
-            Stack stack = new Stack(42);
+            Stack testStack = new Stack(42);
 
-            Assert.NotNull(stack.Top);
+            Assert.Equal(42, testStack.Top.Value);
         }
 
         //[Fact]
         public void CanPushMultipleValuesOntoStack()
         {
-
+            Stack testStack = new Stack(42);
+            testStack.Push(34);
+            testStack.Push(26);
+         
+                
+            
         }
 
         //[Fact]
@@ -49,9 +54,9 @@ namespace StackAndQueueUnitTests
         [Fact]
         public void CanEnqueueIntoQueue()
         {
-            Queue queue = new Queue(42);
+            Queue testQueue = new Queue(42);
 
-            Assert.NotNull(queue.Front);
+            Assert.NotNull(testQueue.Front);
         }
 
         //[Fact]
@@ -81,9 +86,9 @@ namespace StackAndQueueUnitTests
         [Fact]
         public void CanInstantiateEmptyQueue()
         {
-            Queue queue = new Queue();
+            Queue testQueue = new Queue();
 
-            Assert.Null(queue.Front);
+            Assert.Null(testQueue.Front);
         }
 
     }

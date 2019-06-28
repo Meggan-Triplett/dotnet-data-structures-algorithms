@@ -9,7 +9,7 @@ namespace LinkedList
         {
             Console.WriteLine("Hello World!");
 
-            ConsoleLinkedList();
+            UserInterface();
         }
 
         static void ConsoleLinkedList()
@@ -26,7 +26,7 @@ namespace LinkedList
             Console.WriteLine("Please choose from one of the following options:");
             Console.WriteLine("1) Insert: Add New Node Into Existing Linked List");
             Console.WriteLine("2) Includes: Check If Given Value Exists in Linked List");
-            Console.WriteLine("3) Print: Display Linked List");
+            Console.WriteLine("3) Print: Display a Linked List");
             Console.WriteLine("4) Exit");
 
             string userSelection = Console.ReadLine();
@@ -39,11 +39,17 @@ namespace LinkedList
                     ReturnToMenu();
                     break;
                 case 2:
-                    WithdrawMoney(WithdrawRequest());
+                    IncludedInLinkList();
                     ReturnToMenu();
                     break;
                 case 3:
-                    DepositMoney(DepositRequest());
+                    LinkList linkedlist = new LinkList(9);
+                    linkedlist.Insert(42);
+                    linkedlist.Insert(6);
+                    linkedlist.Insert(1);
+
+                    linkedlist.Print();
+
                     ReturnToMenu();
                     break;
                 case 4:

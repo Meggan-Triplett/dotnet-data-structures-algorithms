@@ -56,11 +56,15 @@ namespace LinkedListUnitTests
             Assert.True(testResult);
         }
 
-        //[Fact]
-        //public void WillReturnFalseIfCertainValueDoesNotExistInLinkedList()
-        //{
+        [Fact]
+        public void WillReturnFalseIfCertainValueDoesNotExistInLinkedList()
+        {
+            LinkList linkedList = new LinkList(67);
+            linkedList.Insert(42);
+            bool testResult = linkedList.Includes(99);
 
-        //}
+            Assert.False(testResult);
+        }
 
         //[Fact]
         public void CanReturnCollectionOfAllValuesThatExistInLinkedList()

@@ -7,8 +7,6 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
             UserInterface();
         }
 
@@ -63,11 +61,7 @@ namespace LinkedList
 
         static void InsertToLinkedList()
         {
-            LinkList linkedlist = new LinkList(9);
-
-            linkedlist.Insert(42);
-            linkedlist.Insert(6);
-            linkedlist.Insert(1);
+            LinkList linkedlist = new LinkList();
 
             Console.WriteLine("Please enter what value you would like the new node to have.");
 

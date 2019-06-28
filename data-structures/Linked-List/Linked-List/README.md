@@ -36,18 +36,19 @@ Methods included in this `Linked List` are `Insert`, `Includes` and `Print`.
 ##### Insert Method
 *The Insert Method takes in a new int that will be the Value and creates a new Node that gets added as the Head 
 of the Linked List.*
-![Linked List Insert Method Example](https://via.placeholder.com/750x500)
+![Linked List Insert Method Example](https://github.com/Meggan-Triplett/dotnet-data-structures-algorithms/blob/master/assets/LinkedList-InsertMethodExample.JPG?raw=true)
 
 ##### Includes Method
 *The Includes Method Takes in any int, returns a boolean depending on whether the Value exists as a Node's Value 
 somewhere in the Linked List.*
-![Linked List Includes Method Example](https://via.placeholder.com/750x500)
+![Linked List Includes Method Example](https://github.com/Meggan-Triplett/dotnet-data-structures-algorithms/blob/master/assets/LinkedList-IncludesMethodExample.JPG?raw=true)
 
 ##### Print Method
 *The Print Method will display to console the Value of each Node in the Linked List.**
-![Linked List Print Method Example](https://via.placeholder.com/750x500)
+![Linked List Print Method Example](https://github.com/Meggan-Triplett/dotnet-data-structures-algorithms/blob/master/assets/LinkedList-PrintMethodExample.JPG?raw=true)
 
 
 ------------------------------
 
 ## Change Log
+1.2 - Updated README with images, completed unit tests. 6/28/2019 - Changes made by M.Triplett

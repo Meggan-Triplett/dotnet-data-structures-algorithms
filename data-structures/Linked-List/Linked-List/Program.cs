@@ -35,7 +35,7 @@ namespace LinkedList
             switch (actionSelection)
             {
                 case 1:
-                    ViewBalance();
+                    InsertToLinkedList();
                     ReturnToMenu();
                     break;
                 case 2:
@@ -54,6 +54,43 @@ namespace LinkedList
                     break;
             }
         }
+
+        static void InsertToLinkedList()
+        {
+            LinkList linkedlist = new LinkList(9);
+
+            linkedlist.Insert(42);
+            linkedlist.Insert(6);
+            linkedlist.Insert(1);
+
+            Console.WriteLine("Please enter what value you would like the new node to have.");
+
+            string userResponse = Console.ReadLine();
+            int newNodeValue = Convert.ToInt32(userResponse);
+
+            linkedlist.Insert(newNodeValue);
+
+            Console.WriteLine();
+            linkedlist.Print(); 
+        }
+
+        static void IncludedInLinkList()
+        {
+            LinkList linkedlist = new LinkList(9);
+
+            linkedlist.Insert(42);
+            linkedlist.Insert(6);
+            linkedlist.Insert(1);
+
+            Console.WriteLine("Please enter what value you would like to check if it exists on the linked list.");
+
+            string userResponse = Console.ReadLine();
+            int searchValue = Convert.ToInt32(userResponse);
+
+            Console.WriteLine();
+            Console.WriteLine(linkedlist.Includes(searchValue));
+        }
+
         static void ReturnToMenu()
         {
             Console.WriteLine("Would you like to return to menu? (Y/N)");

@@ -11,5 +11,42 @@ namespace LinkedListUnitTests
         {
 
         }
+
+        //[Fact]
+        //public void CanInsertIntoLinkedList()
+        //{
+
+        //}
+
+        //[Fact]
+        //public void HeadCanPointToFirstNodeOfLinkedList()
+        //{
+
+        //}
+
+        //[Fact]
+        //public void CanInsertMultipleNodesIntoLinkedList()
+        //{
+
+        //}
+
+        //[Fact]
+        //public void WillReturnTrueIfCertainValueExistsInLinkedList()
+        //{
+
+        //}
+
+        //[Fact]
+        //public void WillReturnFalseIfCertainValueDoesNotExistInLinkedList()
+        //{
+
+        //}
+
+        //[Fact]
+        //public void CanReturnCollectionOfAllValuesThatExistInLinkedList()
+        //{
+
+        //}
+
     }
 }

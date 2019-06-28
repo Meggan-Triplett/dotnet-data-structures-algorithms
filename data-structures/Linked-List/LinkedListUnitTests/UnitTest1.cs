@@ -34,11 +34,17 @@ namespace LinkedListUnitTests
             Assert.Equal("42", testResult);
         }
 
-        //[Fact]
-        //public void CanInsertMultipleNodesIntoLinkedList()
-        //{
+        [Fact]
+        public void CanInsertMultipleNodesIntoLinkedList()
+        {
+            LinkList linkedList = new LinkList();
+            linkedList.Insert(42);
+            linkedList.Insert(36);
+            linkedList.Insert(99);
+            string testResult = Convert.ToString(linkedList.Head.Value);
 
-        //}
+            Assert.Equal("99", testResult);
+        }
 
         //[Fact]
         //public void WillReturnTrueIfCertainValueExistsInLinkedList()
@@ -53,10 +59,10 @@ namespace LinkedListUnitTests
         //}
 
         //[Fact]
-        //public void CanReturnCollectionOfAllValuesThatExistInLinkedList()
-        //{
-        //Lab document requested a print method at the time of initial creation
-        //}
+        public void CanReturnCollectionOfAllValuesThatExistInLinkedList()
+        {
+            //Lab document requested a print method at the time of initial creation
+        }
 
     }
 }

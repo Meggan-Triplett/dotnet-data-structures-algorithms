@@ -16,11 +16,9 @@ namespace LinkedList
         {
             LinkList list = new LinkList(9);
 
-            list.Insert(4);
-            list.Insert(9);
+            list.Insert(42);
+            list.Insert(6);
             list.Insert(1);
-
-            list.Print();
         }
 
 

@@ -9,7 +9,9 @@ namespace LinkedListUnitTests
         [Fact]
         public void CanInstantiateEmptyLinkedList()
         {
+            LinkList linkedList = new LinkList();
 
+            Assert.Null(linkedList.Head);
         }
 
         //[Fact]

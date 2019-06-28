@@ -9,6 +9,11 @@ namespace LinkedList.Classes
         public Node Head { get; set; }
         public LinkList Current { get; set; }
 
+        public LinkList()
+        {
+
+        }
+
         /// <summary>
         /// Creates a link list with one node which is set to head
         /// </summary>

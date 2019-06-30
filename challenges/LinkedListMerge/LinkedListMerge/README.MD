@@ -33,11 +33,11 @@ and return a reference to the head of the zipped list.
 
 
 ## Whiteboard Visual
-![White Board Solution](...\..\assets\LinkedListMergeWhiteBoard.jpg)
-
+![White Board Solution](https://github.com/Meggan-Triplett/dotnet-data-structures-algorithms/blob/master/assets/LinkedListMergeWhiteBoard.jpg?raw=true)
 
 ------------------------------
 
 ## Change Log
+1.2 - Fixed Image Link In README, 
 
 ------------------------------

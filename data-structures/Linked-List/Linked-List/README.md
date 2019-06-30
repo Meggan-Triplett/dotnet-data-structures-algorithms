@@ -52,3 +52,4 @@ somewhere in the Linked List.*
 
 ## Change Log
 1.2 - Updated README with images, completed unit tests. 6/28/2019 - Changes made by M.Triplett
+

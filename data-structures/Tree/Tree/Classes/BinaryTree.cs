@@ -13,6 +13,12 @@ namespace Tree.Classes
 
         }
 
+        public BinaryTree(int value)
+        {
+            Node node = new Node(value);
+            Root = node;
+        }
+
 
     }
 }

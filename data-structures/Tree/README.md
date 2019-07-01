@@ -19,7 +19,6 @@ Each `Node` in the binary tree will have three properties that can be set.
 
 The `Binary Tree` itself will have two additional properties.
 1. `Root`, which dictates the first `Node` in the `Binary Tree`
-2. `CurrentRoot`, is utilized while traversing a `Binary Tree`, and will hold the value of the `CurrentRoot` in the traversal
 
 Methods included in the `Binary Tree` class are `PreOrder`, `InOrder` and `PostOrder`.
 Methods included in the `Binary Search Tree` class are `Add` and `Contains`.
@@ -36,8 +35,8 @@ Methods included in the `Binary Search Tree` class are `Add` and `Contains`.
 
 | Binary Search Tree Method | Summary | Big O Time | Big O Space | Example | 
 | :----------- | :----------- | :-------------: | :-------------: | :----------- |
-| `Add` | Accepts int `Value` and will then traverse the tree, checking if the `CurrentRoot` `Value` is less than or greater than given int `Value`. | O(n) | O(1) | binaryTree.PreOrder() |
-| `Contains` | Takes in int `Value` and will then traverse the tree, checking if the `CurrentRoot` `Value` is less than, greater than or equal to the given int `Value`. Will then traverse to `Left` `Node` if int `Value` is less than `CurrentRoot` `Value`, will then traverse to `Right` `Node` if int `Value` is greater than `CurrentRoot` `Value`, if `CurrentRoot` `Value` is equal to given `Value`, returns true, else continue traversal until all `Node` `Value`s have been check and return false | O(log n) | O(1) | binaryTree.Contains(42) |
+| `Add` | Accepts int `Value` and will then traverse the tree, checking if the `Root` `Value` is less than or greater than given int `Value`. | O(n) | O(1) | binarySearchTree.Add(42) |
+| `Contains` | Takes in int `Value` and will then traverse the tree, checking if the `Root` `Value` is less than, greater than or equal to the given int `Value`. Will then traverse to `Left` `Node` if int `Value` is less than `Root` `Value`, will then traverse to `Right` `Node` if int `Value` is greater than `Root` `Value`, if `Root` `Value` is equal to given `Value`, returns true, else continue traversal until all `Node` `Value`s have been check and return false | O(log n) | O(1) | binarySearchTree.Contains(42) |
 | 
 
 ------------------------------
@@ -64,9 +63,9 @@ then existing right node, until all node values have been collected, that collec
 ![Binary Search Tree Add Method Examples]()
 
 ##### Contains Method
-*The Contains Method accepts int value and will then traverse the tree, checking if the currentroot value is less than, 
-greater than or equal to the given int value. Will then traverse to left node if int value is less than currentroot value, 
-will then traverse to right node if int value is greater than currentroot value, if currentroot value is equal to given value,
+*The Contains Method accepts int value and will then traverse the tree, checking if the root value is less than, 
+greater than or equal to the given int value. Will then traverse to left node if int value is less than root value, 
+will then traverse to right node if int value is greater than root value, if root value is equal to given value,
 returns true, else continue traversal until all node values have been check and return false*
 ![Binary Search Tree Includes Method Examples]()
 

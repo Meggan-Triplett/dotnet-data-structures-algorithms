@@ -20,6 +20,26 @@ namespace Tree.Classes
         }
 
         //TODO preOrder traversal method
+        public void PreOrder(Node node, List<int> treeNodes)
+        {
+            treeNodes.Add(node.Value);
+
+            if (node.Left != null)
+            {
+                PreOrder(node.Left, treeNodes);
+            }
+            if (node.Right != null)
+            {
+                PreOrder(node.Right, treeNodes);
+            }
+        }
+
+        public List<int> PreOrder(Node node)
+        {
+            List<int> treeNodes = new List<int>();
+            PreOrder(node, treeNodes);
+            return treeNodes;
+        }
 
         //TODO inOrder traversal method
 

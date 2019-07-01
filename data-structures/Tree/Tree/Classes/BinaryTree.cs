@@ -19,6 +19,11 @@ namespace Tree.Classes
             Root = node;
         }
 
+        //TODO preOrder traversal method
+
+        //TODO inOrder traversal method
+
+        //TODO postOrder traversal method
 
     }
 }

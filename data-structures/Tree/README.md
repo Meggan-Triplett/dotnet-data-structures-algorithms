@@ -29,9 +29,9 @@ Methods included in the `Binary Search Tree` class are `Add` and `Contains`.
 
 | Binary Tree Method | Summary | Big O Time | Big O Space | Example | 
 | :----------- | :----------- | :-------------: | :-------------: | :----------- |
-| `PreOrder` | Will traverse a `Binary Tree` collecting the `Value`s of the `Root` then existing `Left` `Node`, then existing `Right` `Node`, until all `Node` `Value`s have been collected, that collection will then be returned| O(n) | O(1) | binaryTree.PreOrder() |
-| `InOrder` | Will traverse a `Binary Tree` collecting the `Value`s of the existing `Left` `Node`, then `Root`, then existing `Right` `Node`, until all `Node` `Value`s have been collected, that collection will then be returned | O(n) | O(1) | binaryTree.InOrder() |
-| `PostOrder` | Will traverse a `Binary Tree` collecting the `Value`s of the existing `Left` `Node`, then existing `Right` `Node`, then `Root`, until all `Node` `Value`s have been collected, that collection will then be returned | O(n) | O(1) | binaryTree.PostOrder() |
+| `PreOrder` | Will traverse a `Binary Tree` collecting the `Value`s of the `Root` then existing `Left` `Node`, then existing `Right` `Node`, until all `Node` `Value`s have been collected, that collection will then be returned| O(n) | O(h), h = height of binary tree | binaryTree.PreOrder() |
+| `InOrder` | Will traverse a `Binary Tree` collecting the `Value`s of the existing `Left` `Node`, then `Root`, then existing `Right` `Node`, until all `Node` `Value`s have been collected, that collection will then be returned | O(n) |  O(h), h = height of binary tree | binaryTree.InOrder() |
+| `PostOrder` | Will traverse a `Binary Tree` collecting the `Value`s of the existing `Left` `Node`, then existing `Right` `Node`, then `Root`, until all `Node` `Value`s have been collected, that collection will then be returned | O(n) |  O(h), h = height of binary tree | binaryTree.PostOrder() |
 
 | Binary Search Tree Method | Summary | Big O Time | Big O Space | Example | 
 | :----------- | :----------- | :-------------: | :-------------: | :----------- |

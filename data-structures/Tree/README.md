@@ -72,7 +72,7 @@ returns true, else continue traversal until all node values have been check and 
 ![Binary Search Tree Includes Method Examples]()
 
 ##### BreadthFirst Method
-*The BreadthFirst Method takes in a binary tree and then will traverse the binary tree using enqueue to collect the node value of the root. It will then do the same on the next level below the root, it will collect every node value going from the left most to the right until every node value on that level is enqueued. Once the traversal is complete and has collected the node values from every level the method will return the collection of node values*
+*The BreadthFirst Method takes in a binary tree and then will traverse the binary tree using enqueue to collect the node value of the root. It will then do the same on the next level below the root, it will collect every node value going from the left most to the right until every node value on that level is enqueued. Once the traversal is complete and has collected the node values from every level the method will dequeue the values into a list and then return the list of node values*
 ![Binary Search Tree BreadthFirst Method Whiteboard ](https://github.com/Meggan-Triplett/dotnet-data-structures-algorithms/blob/master/assets/BreadthFirst.jpg?raw=true)
 
 ------------------------------

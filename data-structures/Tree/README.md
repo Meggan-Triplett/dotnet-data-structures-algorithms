@@ -20,7 +20,7 @@ Each `Node` in the binary tree will have three properties that can be set.
 The `Binary Tree` itself will have two additional properties.
 1. `Root`, which dictates the first `Node` in the `Binary Tree`
 
-Methods included in the `Binary Tree` class are `PreOrder`, `InOrder` and `PostOrder`.
+Methods included in the `Binary Tree` class are `PreOrder`, `InOrder`, `PostOrder` and `BreadthFirst`.
 Methods included in the `Binary Search Tree` class are `Add` and `Contains`.
 
 ------------------------------
@@ -32,6 +32,8 @@ Methods included in the `Binary Search Tree` class are `Add` and `Contains`.
 | `PreOrder` | Will traverse a `Binary Tree` collecting the `Value`s of the `Root` then existing `Left` `Node`, then existing `Right` `Node`, until all `Node` `Value`s have been collected, that collection will then be returned| O(n) | O(h), h = height of binary tree | binaryTree.PreOrder() |
 | `InOrder` | Will traverse a `Binary Tree` collecting the `Value`s of the existing `Left` `Node`, then `Root`, then existing `Right` `Node`, until all `Node` `Value`s have been collected, that collection will then be returned | O(n) |  O(h), h = height of binary tree | binaryTree.InOrder() |
 | `PostOrder` | Will traverse a `Binary Tree` collecting the `Value`s of the existing `Left` `Node`, then existing `Right` `Node`, then `Root`, until all `Node` `Value`s have been collected, that collection will then be returned | O(n) |  O(h), h = height of binary tree | binaryTree.PostOrder() |
+| `BreadthFirst` | Will take in a `Binary Tree` then will traverse the `Binary Tree` top level down, left to right order, collecting each `Node` `Value` until the traversal is complete. Will then return the collection of `Node` `Value`s. | O(w^2), w = width of binary tree |  O(n^2) | binaryTree.BreadthFirst(superRootNode) |
+
 
 | Binary Search Tree Method | Summary | Big O Time | Big O Space | Example | 
 | :----------- | :----------- | :-------------: | :-------------: | :----------- |
@@ -69,6 +71,11 @@ will then traverse to right node if int value is greater than root value, if roo
 returns true, else continue traversal until all node values have been check and return false*
 ![Binary Search Tree Includes Method Examples]()
 
+##### BreadthFirst Method
+*The BreadthFirst Method takes in a binary tree and then will traverse the binary tree using enqueue to collect the node value of the root. It will then do the same on the next level below the root, it will collect every node value going from the left most to the right until every node value on that level is enqueued. Once the traversal is complete and has collected the node values from every level the method will dequeue the values into a list and then return the list of node values*
+![Binary Search Tree BreadthFirst Method Whiteboard ](https://github.com/Meggan-Triplett/dotnet-data-structures-algorithms/blob/master/assets/BreadthFirst.jpg?raw=true)
+
 ------------------------------
 
 ## Change Log
+1.2 - Added a BreadthFirst method and whiteboard image.

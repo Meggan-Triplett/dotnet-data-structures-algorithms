@@ -25,5 +25,15 @@ namespace InsertionSortUnitTests
 
             Assert.Equal(expectedArray, actualArray);
         }
+
+        [Fact]
+        public void CanInsertionSortWithInputIntArrayWithOddNumberOfInts()
+        {
+            int[] testArray = new int[7] { 67, 4, 42, 9, 21, 91, 15 };
+            int[] expectedArray = new int[7] { 4, 9, 15, 21, 42, 67, 91 };
+            int[] actualArray = InsertionSortMethods.InsertionSort(testArray);
+
+            Assert.Equal(expectedArray, actualArray);
+        }
     }
 }

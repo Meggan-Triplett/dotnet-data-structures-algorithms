@@ -16,7 +16,7 @@ Insertion sort is a method that takes in an integer array and will sort the inte
 
 | Insertion Sort Method | Summary | Big O Time | Big O Space | Example | 
 | :----------- | :----------- | :-------------: | :-------------: | :----------- |
-| InsertionSort | Sorts integer array from least to greatest values | O(n^2) | O(n) | InsertionSort(int[3]{ 42, 4, 9 }) |
+| InsertionSort | Sorts integer array from least to greatest values | O(n^2) | O(1) | InsertionSort(int[3]{ 42, 4, 9 }) |
 
 ------------------------------
 

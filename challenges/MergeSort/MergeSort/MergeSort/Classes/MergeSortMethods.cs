@@ -14,7 +14,8 @@ namespace MergeSort.Classes
             if (arraySize > 1)
             {
                 int midPoint = arraySize / 2;
-                int left = array[0, midPoint];
+                int[] left = new int[midPoint];
+                int[] right = new int[midPoint];
                 
 
 
@@ -23,6 +24,9 @@ namespace MergeSort.Classes
         }
 
         public void Merge()
+        {
+
+        }
 
     }
 }

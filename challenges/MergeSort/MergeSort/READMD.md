@@ -28,7 +28,7 @@ Output <- [7, 45, 50, 94, 132, 397, 438, 589]
 
 ## Visuals
 
-![Lecture Notes: Get Comfortable with Merge Sort]()
+[Lecture Notes: Get Comfortable with Merge Sort](https://github.com/Meggan-Triplett/dotnet-data-structures-algorithms/blob/master/challenges/MergeSort/MergeSort/Assets/LECTURE-NOTES.md)
 
 ------------------------------
 

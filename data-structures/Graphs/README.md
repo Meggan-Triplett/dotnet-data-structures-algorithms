@@ -9,8 +9,11 @@
 
 A *graph* is a non-linear data structure that is a collection of vertices(nodes) that can be connected with lines called edges.
 
-Each `vertex`(node) is a data object that has a value.
-Each `edge`
+- `Vertex`(node) is a data object that has a value.
+- `Edge` is a connection between two nodes.
+- `Neighbor`is a an adjacent vertex that is connected to another vertex via by edge.
+- `Degree` is the number of edges connected to a given vertex.
+
 
 
 Methods included in this `Graph` are `AddNode`, `AddEdge`, `GetNodes`, `GetNeighbors` and `Size`.

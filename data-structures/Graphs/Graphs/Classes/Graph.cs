@@ -30,12 +30,12 @@ namespace Graphs.Classes
         }
 
         /// <summary>
-        /// Adds an undirected edge between two vertices on the graph
+        /// Adds a directed edge between two vertices on the graph
         /// </summary>
         /// <param name="first">Reference to the first vertex</param>
         /// <param name="second">Reference to the second vertex</param>
         /// <param name="weight">Weight value of the edge between the first and second vertex</param>
-        public void AddUndirectedEdge(Vertex<T> first, Vertex<T> second, int weight)
+        public void AddDirectedEdge(Vertex<T> first, Vertex<T> second, int weight)
         {
             AdjacencyList[first].Add(
                 new Edge<T>
@@ -45,6 +45,11 @@ namespace Graphs.Classes
                 });
         }
 
+        public void AddUndirectedEdge(Vertex<T> first, Vertex<T> second, int weight)
+        {
+            AddDirectedEdge(first, second, weight);
+            AddDirectedEdge(second, first, weight);
+        }
 
     }
 }

@@ -11,6 +11,5 @@ namespace Graphs.Classes
         {
             Value = value;
         }
-
     }
 }

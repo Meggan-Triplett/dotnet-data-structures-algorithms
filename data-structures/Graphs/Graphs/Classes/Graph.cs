@@ -34,7 +34,7 @@ namespace Graphs.Classes
         /// </summary>
         /// <param name="first">Reference to the first vertex</param>
         /// <param name="second">Reference to the second vertex</param>
-        /// <param name="weight">Weight value of the edge between the first and second vertex</param>
+        /// <param name="weight">Weight value of the edge between the first and second vertices</param>
         public void AddDirectedEdge(Vertex<T> first, Vertex<T> second, int weight)
         {
             AdjacencyList[first].Add(
@@ -45,11 +45,35 @@ namespace Graphs.Classes
                 });
         }
 
+        /// <summary>
+        /// Adds a undirected edge between two vertices on the graph
+        /// </summary>
+        /// <param name="first">Reference to the first vertex</param>
+        /// <param name="second">Reference to the second vertex</param>
+        /// <param name="weight">Weight value of the edge between the first and second vertices</param>
         public void AddUndirectedEdge(Vertex<T> first, Vertex<T> second, int weight)
         {
             AddDirectedEdge(first, second, weight);
             AddDirectedEdge(second, first, weight);
         }
+
+        /// <summary>
+        /// Request for all vertices contained in the adjacency list
+        /// </summary>
+        /// <returns>List that contains all vertices</returns>
+        public List<Vertex<T>> GetVertices()
+        {
+            List<Vertex<T>> vertices = new List<Vertex<T>>();
+
+            foreach (var vertex in AdjacencyList)
+            {
+                vertices.Add(vertex.Key);
+            }
+
+            return vertices;
+        }
+
+
 
     }
 }

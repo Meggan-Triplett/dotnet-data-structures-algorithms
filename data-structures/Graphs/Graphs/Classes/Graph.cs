@@ -16,6 +16,11 @@ namespace Graphs.Classes
             AdjacencyList = new Dictionary<Vertex<T>, List<Edge<T>>>();
         }
 
+        /// <summary>
+        /// Creates a new vertex that is then added to the adjacency list
+        /// </summary>
+        /// <param name="value">Desired value of the vertex</param>
+        /// <returns>The newly created vertex</returns>
         public Vertex<T> AddVertex(T value)
         {
             Vertex<T> vertex = new Vertex<T>(value);
@@ -23,6 +28,23 @@ namespace Graphs.Classes
 
             return vertex;
         }
+
+        /// <summary>
+        /// Adds an undirected edge between two vertices on the graph
+        /// </summary>
+        /// <param name="first">Reference to the first vertex</param>
+        /// <param name="second">Reference to the second vertex</param>
+        /// <param name="weight">Weight value of the edge between the first and second vertex</param>
+        public void AddUndirectedEdge(Vertex<T> first, Vertex<T> second, int weight)
+        {
+            AdjacencyList[first].Add(
+                new Edge<T>
+                {
+                    Vertex = second,
+                    Weight = weight
+                });
+        }
+
 
     }
 }

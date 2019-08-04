@@ -58,7 +58,7 @@ namespace Graphs.Classes
         }
 
         /// <summary>
-        /// Request for all vertices contained in the adjacency list
+        /// Retrieves all vertices contained in the adjacency list
         /// </summary>
         /// <returns>List that contains all vertices</returns>
         public List<Vertex<T>> GetVertices()
@@ -71,6 +71,16 @@ namespace Graphs.Classes
             }
 
             return vertices;
+        }
+
+        /// <summary>
+        /// Retrieves a list of all edges connected to a particular vertex
+        /// </summary>
+        /// <param name="vertex">The vertex from which the list of neighbors should be provided of</param>
+        /// <returns>A list of all edges connected to a particular vertex and each edge's respective weight</returns>
+        public List<Edge<T>> GetNeighbors(Vertex<T> vertex)
+        {
+            return AdjacencyList[vertex];
         }
 
 

@@ -24,9 +24,9 @@ Methods included in this `Graph` are `AddNode`, `AddEdge`, `GetNodes`, `GetNeigh
 
 | Linked List Method | Summary | Big O Time | Big O Space | Example | 
 | :----------- | :----------- | :-------------: | :-------------: | :----------- |
-| `AddNode` | | O() | O() |  |
+| `AddVertex` | | O() | O() |  |
 | `AddEdge` | | O() | O() |  |
-| `GetNodes` | | O() | O() |  |
+| `GetVerticies` | | O() | O() |  |
 | `GetNeighbors` | | O() | O() |  |
 | `Size` | | O() | O() |  |
 
@@ -34,9 +34,9 @@ Methods included in this `Graph` are `AddNode`, `AddEdge`, `GetNodes`, `GetNeigh
 
 ## Visuals
 
-##### AddNode Method
-*The AddNode method takes in a value and creates a vertex with the value being the input and returns the added node*
-![Graph AddNode Method Example]()
+##### AddVertex Method
+*The AddVertex method takes in a value and creates a vertex with the value being the input and returns the added node*
+![Graph AddVertex Method Example]()
 
 ##### AddEdge Method
 *The AddEdge method takes in two nodes and the weight between them, if applicable, and adds an edge connecting the two nodes with the weight as it's value*
@@ -44,7 +44,7 @@ Methods included in this `Graph` are `AddNode`, `AddEdge`, `GetNodes`, `GetNeigh
 
 ##### GetNodes Method
 *The GetNodes method returns all of the vertices in the graph as a list*
-![Graph GetNodes Method Example]()
+![Graph GetVertices Method Example]()
 
 ##### GetNeighbors Method
 *The GetNeighbors method takes in a given vertex and returns a collection of connected vertices with their weight if applicable*

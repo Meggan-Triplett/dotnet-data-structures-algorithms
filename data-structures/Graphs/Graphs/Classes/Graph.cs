@@ -8,7 +8,9 @@ namespace Graphs.Classes
     class Graph<T>
     {
         //Collection of key value pairs of Vertices and their Edges
-        public Dictionary<Vertex<T>, List<Edge<T>>> AdjacencyList { get; set; } 
+        public Dictionary<Vertex<T>, List<Edge<T>>> AdjacencyList { get; set; }
+
+        public int size = 0;
 
         //Graph constructor that is built from an AdjacencyList
         public Graph()
@@ -25,6 +27,8 @@ namespace Graphs.Classes
         {
             Vertex<T> vertex = new Vertex<T>(value);
             AdjacencyList.Add(vertex, new List<Edge<T>>());
+
+            size++;
 
             return vertex;
         }
@@ -83,7 +87,14 @@ namespace Graphs.Classes
             return AdjacencyList[vertex];
         }
 
-
+        /// <summary>
+        /// Retrieves total number of verticies in the graph
+        /// </summary>
+        /// <returns>Total number of verticies in the graph</returns>
+        public int Size()
+        {
+            return size;
+        }
 
     }
 }

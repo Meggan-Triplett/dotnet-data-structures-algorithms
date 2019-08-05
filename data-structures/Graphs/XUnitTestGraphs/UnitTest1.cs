@@ -1,5 +1,6 @@
 using System;
 using Xunit;
+using Graphs.Classes;
 
 namespace XUnitTestGraphs
 {
@@ -8,43 +9,56 @@ namespace XUnitTestGraphs
         [Fact]
         public void VertexCanBeAddedToGraph()
         {
+            Graph<int> graph = new Graph<int>();
+            graph.AddVertex(42);
 
+            string addedVertexValue = "42";
+
+            Assert.Contains(addedVertexValue, "42");
         }
 
-        [Fact]
+        //[Fact]
         public void EdgeCanBeAddedToGraph()
         {
+            Graph<int> graph = new Graph<int>();
+            Vertex<int> first = graph.AddVertex(42);
+            Vertex<int> second = graph.AddVertex(36);
 
+            graph.AddUndirectedEdge(first, second, 7);
+
+           
         }
 
-        [Fact]
+        //[Fact]
         public void AllVerticesCanBeRetrieved()
         {
 
         }
 
-        [Fact]
+        //[Fact]
         public void AllNeighborsOfGivenVertexCanBeRetrieved()
         {
 
         }
 
-        [Fact]
+        //[Fact]
         public void NumberOfNodesInGraphCanBeRetrieved()
         {
 
         }
 
-        [Fact]
+        //[Fact]
         public void GraphOfOneVertexAndEdgeCanBeReturned()
         {
 
         }
 
-        [Fact]
+        //[Fact]
         public void EmptyGraphReturnsNull()
         {
+            Graph<int> graph = new Graph<int>();
 
+            
         }
 
     }

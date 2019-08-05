@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Graphs.Classes
 {
-    class Graph<T>
+    public class Graph<T>
     {
         //Collection of key value pairs of Vertices and their Edges
         public Dictionary<Vertex<T>, List<Edge<T>>> AdjacencyList { get; set; }

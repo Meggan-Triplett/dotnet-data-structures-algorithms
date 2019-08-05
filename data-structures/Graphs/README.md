@@ -61,3 +61,4 @@ Methods included in this `Graph` are `AddNode`, `AddEdge`, `GetNodes`, `GetNeigh
 ------------------------------
 
 ## Change Log
+1.01 Completed methods, updated README.md, and added some unit tests - 8/4/2019 - M.Triplett

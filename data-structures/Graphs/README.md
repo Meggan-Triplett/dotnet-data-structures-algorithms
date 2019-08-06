@@ -26,9 +26,9 @@ Methods included in this `Graph` are `AddNode`, `AddEdge`, `GetNodes`, `GetNeigh
 | `AddVertex` | Takes in a value and creates a vertex with that value and returns the new vertex | O(1) | O(1) | graph.AddVertex(42); |
 | `AddDirectedEdge` |Takes in two nodes and the weight between them, and adds a directed edge connecting the two nodes with the weight as it's value | O(1) | O(1) | graph.AddDirectedEdge(first, second, 7); |
 | `AddUndirectedEdge` | Takes in two nodes and the weight between them, and adds an undirected edge connecting the two nodes with the weight as it's value | O(1) | O(1) | graph.AddUndirectedEdge(first, second, 7); |
-| `GetVertices` | | O(n) | O(n) | graph.GetVertices(); |
-| `GetNeighbors` | | O(1) | O(1) | graph.GetNeighbors(); |
-| `Size` | | O(1) | O(1) | graph.Size(); |
+| `GetVertices` | Retrieves a list of all nodes in the adjacency list  | O(n) | O(n) | graph.GetVertices(); |
+| `GetNeighbors` | Takes in a node and retrieves a list of all edges directly connected to the given node | O(1) | O(1) | graph.GetNeighbors(Vertex`<T>` vertex); |
+| `Size` | Return the total number of vertices in graph| O(1) | O(1) | graph.Size(); |
 
 ------------------------------
 
@@ -61,4 +61,4 @@ Methods included in this `Graph` are `AddNode`, `AddEdge`, `GetNodes`, `GetNeigh
 ------------------------------
 
 ## Change Log
-1.01 Completed methods, updated README.md, and added some unit tests - 8/4/2019 - M.Triplett
+1.01 Completed methods, updated README.md, and added some unit tests - 8/5/2019 - M.Triplett

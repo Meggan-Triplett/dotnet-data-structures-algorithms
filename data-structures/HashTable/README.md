@@ -22,10 +22,10 @@ Methods included in this `Hash Table` are `Add`, `Get`, `Contains` and `Hash`.
 
 | Linked List Method | Summary | Big O Time | Big O Space | Example | 
 | :----------- | :----------- | :-------------: | :-------------: | :----------- |
-| `Add` | Takes in a `key` and it's `value` and creates a `node` that will be stored on the table| O() | O() | hashtable.Add(key, value) |
-| `Get` | Takes in a `key` and retrieves the matching value from the table | O() | O() | hashtable.Get(key) |
-| `Contains` | Takes in a `key` and returns a boolean, indicating if the key already exists on the table | O() | O() | hashtable.Contains(key) |
-| `Hash` | Takes in an arbitrary `key` and returns an index in the collection| O() | O() | hashtable.Hash(key) |
+| `Add` | Takes in a `key` and it's `value` and creates a `node` that will be stored on the table| O(1) | O(n) | hashtable.Add(key, value) |
+| `Get` | Takes in a `key` and retrieves the matching `value` from the table | O(1) | O(1) | hashtable.Get(key) |
+| `Contains` | Takes in a `key` and returns a boolean, indicating if the key already exists on the table | O(1) | O(1) | hashtable.Contains(key) |
+| `Hash` | Takes in an arbitrary `key` and returns an index in the collection| O(1) | O(1) | hashtable.Hash(key) |
 
 ------------------------------
 
@@ -36,15 +36,15 @@ Methods included in this `Hash Table` are `Add`, `Get`, `Contains` and `Hash`.
 ![Hash Table Add Method Example]()
 
 ##### Get Method
-*The Get method*
+*The Get method takes in a key and retrieves the matching value from the hashtable*
 ![Hash Table Get Method Example]()
 
 ##### Contains Method
-*The Contains method*
+*The Contains method takes in a key and returns a boolean, indicating if the key already exists on the table*
 ![Hash Table Contains Method Example]()
 
 ##### Hash Method
-*The Hash method*
+*The Hash method takes in an arbitrary key and returns an index in the collection*
 ![Hash Table Hash Method Example]()
 
 ------------------------------
